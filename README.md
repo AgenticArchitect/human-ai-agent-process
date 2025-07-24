@@ -1,5 +1,6 @@
 Need for a Human-AI Agent Software Development Process
-# 🤖 Human-AI Agent Software Development Process
+# <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/20bedc7b-4dc7-4ea2-95c1-564a172677a7" />
+ Human-AI Agent Software Development Process
 
 ## 🧭 Executive Summary
 
