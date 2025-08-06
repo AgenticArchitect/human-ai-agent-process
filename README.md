@@ -1,20 +1,26 @@
-Need for a Human-AI Agent Software Development Process
-# <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/20bedc7b-4dc7-4ea2-95c1-564a172677a7" />
- Human-AI Agent Software Development Process
+# 🤝 Human-Agent Software Development Process
 
-## 🧭 Executive Summary
+This repository showcases a structured framework for collaborative development between humans and AI agents. It emphasizes **readability**, **traceability**, and **semantic hygiene**, enabling teams to build AI-integrated systems that are robust, transparent, and adaptable.
 
-If your organization is attempting to shorten the software development lifecycle by using AI to generate code, be aware of the hidden pitfalls. While AI-assisted coding may accelerate initial development, many companies have discovered **slower and more frustrating testing cycles** because engineers often **cannot read or understand the source code** produced.
+## 🔍 Why This Matters
 
-This proposal outlines a Human-AI Agent collaborative process that transforms passive code generation into **interactive agentic partnership**—ensuring that software is understandable, testable, and maintainable by real engineers at every stage.
+- ✅ Improves clarity and maintainability of AI-generated code
+- 🔄 Enables iterative refinement between humans and agents
+- 🧠 Bridges the gap between technical and non-technical stakeholders
+- 🛡️ Introduces guardrails for agent behavior and naming conventions
 
----
+## 📚 Documentation
 
-## ❗ Issue
+- [Management Overview](MANAGEMENT_OVERVIEW.md)
+- [Development Process](DEVELOPMENT_PROCESS.md)
+- [Glossary of Terms](GLOSSARY.md)
 
-Over the past few years, multiple companies have experienced testing breakdowns due to unreadable AI-generated source code. When anomalies appear, engineers—both developers and testers—often admit to being unable to trace the logic or behavior back to the underlying code.
+## 🚀 Getting Started
 
----
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/human-agent-process.git
+   cd human-agent-process
 
 ## 📚 Background
 
