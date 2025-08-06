@@ -1,0 +1,12 @@
+human-agent-process/
+├── README.md
+├── MANAGEMENT_OVERVIEW.md
+├── DEVELOPMENT_PROCESS.md
+├── GLOSSARY.md
+├── agent_hygiene_guardrail.py
+├── .github/
+│   └── PULL_REQUEST_TEMPLATE.md
+├── docs/
+│   └── architecture_diagram.png (optional)
+└── config/
+    └── agent_config.yaml
