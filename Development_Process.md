@@ -1,67 +1,23 @@
-# 🛠️ Development Process
+# 🤝 Human-Agent Software Development Process
 
-This document outlines the step-by-step workflow for implementing the Human-Agent Software Development Process. It is designed for developers, QA engineers, and technical leads who collaborate with AI agents to build, refine, and validate software features.
+This repository showcases a structured framework for collaborative development between humans and AI agents. It emphasizes **readability**, **traceability**, and **semantic hygiene**, enabling teams to build AI-integrated systems that are robust, transparent, and adaptable.
 
----
+## 🔍 Why This Matters
 
-## 🔄 Collaboration Cycle
+- ✅ Improves clarity and maintainability of AI-generated code
+- 🔄 Enables iterative refinement between humans and agents
+- 🧠 Bridges the gap between technical and non-technical stakeholders
+- 🛡️ Introduces guardrails for agent behavior and naming conventions
 
-1. **Human Prompting**
-   - Define the task clearly using structured language.
-   - Include context, constraints, and expected output format.
+## 📚 Documentation
 
-2. **Agent Response**
-   - Agent generates pseudocode, implementation, or documentation.
-   - Output includes embedded comments for traceability.
+- [Management Overview](MANAGEMENT_OVERVIEW.md)
+- [Development Process](DEVELOPMENT_PROCESS.md)
+- [Glossary of Terms](GLOSSARY.md)
 
-3. **Human Review**
-   - Evaluate readability, correctness, and semantic hygiene.
-   - Refine or reject agent output as needed.
+## 🚀 Getting Started
 
-4. **Test Case Execution**
-   - Run predefined test cases to validate agent behavior.
-   - Use edge cases and adversarial inputs to assess robustness.
-
-5. **Iterative Refinement**
-   - Repeat the cycle until the output meets quality standards.
-   - Document decisions and rationale for future audits.
-
----
-
-## 🧼 Semantic Hygiene Guidelines
-
-- Variable names must be descriptive and context-aware.
-- Comments should explain *why*, not just *what*.
-- Avoid ambiguous terms, acronyms, or agent-specific jargon.
-- Use the `agent_hygiene_guardrail.py` to enforce standards.
-
----
-
-## 🧪 Test Case Design
-
-| Test Type | Purpose |
-|-----------|---------|
-| Baseline | Validate expected behavior under normal conditions |
-| Edge Case | Test limits and boundary conditions |
-| Adversarial | Challenge agent assumptions and logic |
-| Regression | Ensure previous fixes remain intact |
-
----
-
-## 🧰 Tools & Scripts
-
-- `agent_hygiene_guardrail.py`: Enforces naming and comment standards.
-- `config/agent_config.yaml`: Customize agent behavior and thresholds.
-- `.github/PULL_REQUEST_TEMPLATE.md`: Prompts contributors to confirm hygiene compliance.
-
----
-
-## 📌 Notes
-
-- All agent-generated code must be reviewed by a human before merging.
-- Use the glossary (`GLOSSARY.md`) to maintain consistent terminology.
-- Document each iteration to support traceability and compliance.
-
----
-
-This process transforms AI from a black box into a transparent collaborator—one that learns, adapts, and improves alongside its human teammates.
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/human-agent-process.git
+   cd human-agent-process
