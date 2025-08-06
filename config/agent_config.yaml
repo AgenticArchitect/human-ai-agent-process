@@ -1,0 +1,45 @@
+# ⚙️ Agent Configuration File
+
+# Semantic Hygiene Settings
+hygiene:
+  ambiguous_names:
+    - foo
+    - bar
+    - baz
+    - temp
+    - data
+    - val
+    - x
+    - y
+    - z
+  comment_hints:
+    - why
+    - purpose
+    - intent
+    - rationale
+  enforce_comments: true
+  enforce_variable_names: true
+
+# Override Tokens (optional)
+overrides:
+  allow_names:
+    - id
+    - db
+  allow_comments:
+    - TODO
+    - FIXME
+
+# Sentiment Thresholds (for future use)
+sentiment:
+  positivity_min: 0.2
+  negativity_max: 0.6
+
+# Logging & Output
+logging:
+  verbose: true
+  log_file: hygiene_log.txt
+
+# Integration Settings
+ci:
+  enabled: false
+  fail_on_violation: true
