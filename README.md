@@ -16,20 +16,17 @@ This repository showcases a structured framework for collaborative development b
 - [Glossary of Terms](GLOSSARY.md)
 - [Human-Agent Process Guide (PDF)](docs/Human-Agent-Process-Guide.pdf)
 
-your-repo/
-├── README.md                  # Overview, purpose, key links
-├── docs/                      # Guides, PDFs, diagrams
-│   └── Human-Agent-Process-Guide.pdf
-├── examples/                  # Sample workflows, test cases
-│   └── test-case-01.json
-├── src/                       # Source code (if any)
-│   └── agent_logic.py
-├── config/                    # Configuration files
-│   └── settings.yaml
-├── .github/                   # GitHub workflows, issue templates
-│   └── workflows/
-├── LICENSE                    # Open-source license (optional)
-└── CONTRIBUTING.md            # Collaboration guidelines
+## 🔍 Repository Structure
+
+- README.md         # Overview, purpose, key links
+- docs/             # Guides, PDFs, diagrams
+   -   Human-Agent-Process-Guide.pdf
+- examples/         # Sample workflows, test cases   
+   - test-case-01.json
+- config/           # Configuration files
+   - settings.yaml
+- LICENSE           # Open-source license
+- CONTRIBUTING.md   # Collaboration guidelines
 
 ## 🚀 Getting Started
 
