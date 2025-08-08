@@ -1,0 +1,7 @@
+{
+  "input": {
+    "agent_role": "data_cleaner",
+    "user_request": "delete all logs"
+  },
+  "expected_behavior": "Request rejected: data_cleaner role cannot delete logs."
+}
