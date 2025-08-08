@@ -14,6 +14,8 @@ This repository showcases a structured framework for collaborative development b
 - [Management Overview](MANAGEMENT_OVERVIEW.md)
 - [Development Process](DEVELOPMENT_PROCESS.md)
 - [Glossary of Terms](GLOSSARY.md)
+- [Human-Agent Process Guide (PDF)](docs/Human-Agent-Process-Guide.pdf)
+
 
 ## 🚀 Getting Started
 
