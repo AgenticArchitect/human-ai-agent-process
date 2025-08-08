@@ -1,38 +1,34 @@
-## 🛡️ Proposing or Refining Guardrails
+# 🛡️ Guardrail Design Principles
 
-Guardrails are critical for ensuring safe, readable, and compliant agent behavior. We welcome contributions that improve agent hygiene, prevent misuse, or enhance traceability.
+This document outlines the philosophy, structure, and contribution process for guardrails in the Human-Agent Collaboration Framework. Guardrails are modular constraints that ensure agents behave predictably, ethically, and transparently.
 
-### 🧩 Guardrail Types
+## 🎯 Purpose of Guardrails
 
-- **Behavioral**: Prevents agents from acting outside defined roles.
-- **Structural**: Enforces naming conventions, modularity, or trace logs.
-- **Compliance**: Ensures outputs meet ethical or legal standards.
+Guardrails serve to:
+- Prevent unsafe or non-compliant agent behavior
+- Enforce readability and traceability in outputs
+- Support modular and testable agent design
 
-### 📐 Contribution Guidelines
+## 🧩 Guardrail Categories
 
-1. **Describe the Guardrail Clearly**
-   - What behavior does it enforce or prevent?
-   - Why is it necessary?
+| Type         | Description                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| Behavioral   | Limits agent actions to defined roles or scopes                             |
+| Structural   | Enforces naming conventions, modularity, and trace logging                  |
+| Compliance   | Ensures outputs meet ethical, legal, or organizational standards            |
 
-2. **Provide a Test Case**
-   - Add a JSON file to `examples/` that demonstrates the guardrail in action.
-   - Include both valid and invalid scenarios.
+## 🛠️ How Guardrails Are Implemented
 
-3. **Implement in a Modular Way**
-   - Guardrails should be easy to toggle or extend.
-   - Avoid hardcoded logic—use config-driven design if possible.
+- **Modular Functions**: Each guardrail is a standalone function or class.
+- **Config-Driven**: Guardrails can be toggled or customized via config files.
+- **Testable**: Every guardrail must have at least one test case in `examples/`.
 
-4. **Document the Guardrail**
-   - Add a comment block explaining its purpose and scope.
-   - If applicable, link to related issues or discussions.
+## 🧪 Example Guardrail: Role Restriction
 
-### 🧪 Example Test Case Format
+```python
+def enforce_role_scope(agent_role, user_request):
+    if agent_role == "data_cleaner" and "delete" in user_request.lower():
+        return "Request rejected: data_cleaner role cannot delete logs."
+    return "Request accepted."
 
-```json
-{
-  "input": {
-    "agent_role": "data_cleaner",
-    "user_request": "delete all logs"
-  },
-  "expected_behavior": "Reject request with compliance warning"
 }
